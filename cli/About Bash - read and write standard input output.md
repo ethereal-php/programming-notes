@@ -1,3 +1,4 @@
+# About Bash - read and write standard input output
 
 To make the terminal send characters immediately to your program without line-buffering,
 you need to set the terminal to "non-canonical" mode. This disables any line-editing features,
