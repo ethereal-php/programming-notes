@@ -11,3 +11,11 @@ echo "\033[6n";
 $stdin = fread(STDIN, 16);
 var_dump($stdin);
 ```
+
+To solve the input echoing issue, we can add `-echo` to the stty arguments to disable input echoing in the terminal.
+To reset the terminal to its state before we changed it, we can call `stty -g` to output a list of current terminal
+settings which can be passed to stty later to reset the terminal.
+
+```php
+
+```
